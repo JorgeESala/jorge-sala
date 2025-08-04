@@ -6,24 +6,29 @@ import ToggleTheme from './component/ToggleTheme';
 
 function App() {
   const [displayHome, showIntro] = useState(true);
-  const body = document.querySelector('body');
 
   function toggleMode() {
-    body.classList.toggle('darkMode');
+    document.body.classList.toggle('darkMode');
   }
 
   useEffect(() => {
-    setTimeout(() => {
+    // Activar dark mode por defecto
+    document.body.classList.add('darkMode');
+
+    // Mostrar la página principal después de un tiempo
+    const timer = setTimeout(() => {
       showIntro(false);
-    }, 1500) 
-  },[])
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
-    <ToggleTheme toggleTheme={toggleMode}/>
-    {displayHome ? <WelcomePage/> : <HomePage/>}
+      <ToggleTheme toggleTheme={toggleMode} />
+      {displayHome ? <WelcomePage /> : <HomePage />}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

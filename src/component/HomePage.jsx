@@ -7,7 +7,7 @@ import emailSVG from '../assets/svg/95247-email.json';
 import viteSVG from '../assets/svg/viteLogo.svg';
 import netlifySVG from '../assets/svg/netlifyLogo.svg';
 import sassSVG from '../assets/svg/sassLogo.svg';
-import myResume from '../assets/pdf/ocean-waring-resume.pdf';
+import myResume from '../assets/pdf/jorge-sala-resume.pdf';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faLinkedin, faGithub, faHtml5, faCss3, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons';
@@ -25,23 +25,7 @@ export default function HomePage() {
           style={{ height: "fit-content" }}
         >
           <nav>
-            <h1
-              className="logo"
-              ref={ref}
-              onClick={() => ref.current.scrollTo(0)}
-            >
-              OCEAN
-              <span
-                style={{
-                  color: "rgb(217, 4, 41)",
-                  fontFamily: "Helvetica",
-                  fontSize: "65px",
-                  margin: "0",
-                }}
-              >
-                .
-              </span>
-            </h1>
+           
             <ul className="navOptions">
               <li
                 ref={ref}
@@ -51,17 +35,17 @@ export default function HomePage() {
                     : ref.current.scrollTo(2.25)
                 }
               >
-                PROJECTS
+                PROYECTOS
               </li>
               <li ref={ref} onClick={() => ref.current.scrollTo(1)}>
-                RESUME
+                CURRICULUM
               </li>
               <li
                 style={{ fontWeight: "200" }}
                 ref={ref}
                 onClick={() => ref.current.scrollTo(3)}
               >
-                CONTACT
+                CONTACTO
               </li>
             </ul>
           </nav>
@@ -71,10 +55,10 @@ export default function HomePage() {
           <section className="introSection">
             <div style={{ display: "flex" }}>
               <div className="introText">
-                <h1>MY NAME IS OCEAN WARING</h1>
-                <p>FRONTEND REACT DEVELOPER</p>
+                <h1>JORGE SALA</h1>
+                <p>Desarrollador web</p>
                 <p>
-                  Based in NYC{" "}
+                  Ubicado en Q. Roo{" "}
                   <FontAwesomeIcon
                     icon={faLocationDot}
                     style={{ color: "red" }}
@@ -83,11 +67,11 @@ export default function HomePage() {
                 <div className="contactBtns">
                   <a
                     target="#"
-                    href="https://www.linkedin.com/in/ocean-waring/"
+                    href="https://www.linkedin.com/in/jorge-sala-ac/"
                   >
                     <FontAwesomeIcon className="linkedin" icon={faLinkedin} />
                   </a>
-                  <a target="#" href="https://github.com/Ocn-W">
+                  <a target="#" href="https://github.com/JorgeESala">
                     <FontAwesomeIcon className="github" icon={faGithub} />
                   </a>
                 </div>
@@ -104,17 +88,11 @@ export default function HomePage() {
         <ParallaxLayer offset={1}>
           <section className="aboutMe">
             <div className="aboutIntro">
-              <h2>ABOUT ME</h2>
+              <h2>SOBRE MÍ</h2>
               <p>
-                Hello! I am a Front End React developer based in NYC.
-                Currently building a strong and growing skill set in HTML5, CSS3/SCSS,
-                JavaScript, Redux/Jotai, React, React Native, and TDD using Jest. I consistently improve a keen eye for design
-                and a commitment to producing logical, accessible, and
-                responsive code. I am dedicated to continuous learning and
-                staying up-to-date with the latest trends and best coding
-                practices, ensuring that I can be a useful team player and
-                provide efficient solutions. Let's connect and discuss how I can
-                contribute to your web development team!
+                Ingeniero de software apasionado por el desarrollo de software con experiencia en aplicaciones web FullStack. Capaz de aprender y adaptarme rápidamente a nuevas tecnologías y trabajar de forma independiente y en equipo.
+                 Busco oportunidades profesionales que me permitan aplicar mis habilidades técnicas en un entorno dinámico, desafiante y de constante crecimiento.
+
               </p>
             </div>
             <div className="aboutResume">
@@ -124,11 +102,11 @@ export default function HomePage() {
                 height="100%"
                 type="application/pdf"
               />
-              <a href={myResume}>Download</a>
+              <a href={myResume}>Descargar</a>
             </div>
           </section>
           <section className="techStack">
-            <h2>MY TECHSTACK</h2>
+            <h2>Tecnologías usadas</h2>
             <div className="scrollStack">
               <div className="stackLogos">
                 <FontAwesomeIcon
@@ -186,7 +164,7 @@ export default function HomePage() {
 {/* Projects Section */}
         <ParallaxLayer offset={window.innerWidth < 768 ? 2.5 : 2.25}>
           <section className="projectSection">
-            <h2>PROJECTS</h2>
+            <h2>PROYECTOS</h2>
             <Projects />
           </section>
         </ParallaxLayer>
@@ -198,7 +176,7 @@ export default function HomePage() {
         >
           <Lottie className="lottieEmail" animationData={emailSVG} />
           <section className="contactSection">
-            <h2>LETS WORK</h2>
+            <h2>CONTÁCTAME</h2>
             <div className="formContainer">
               <form
                 netlify
@@ -211,7 +189,7 @@ export default function HomePage() {
                 <input type="hidden" name="form-name" value="contact" />
 
                 <label>
-                  Name
+                  Nombre
                   <input
                     type="text"
                     name="name"
@@ -221,7 +199,7 @@ export default function HomePage() {
                 </label>
 
                 <label htmlFor="email">
-                  Email
+                  Correo
                   <input
                     id="email"
                     type="email"
@@ -232,7 +210,7 @@ export default function HomePage() {
                 </label>
 
                 <label>
-                  Message
+                  Mensaje
                   <textarea
                     name="message"
                     rows="4"
@@ -241,7 +219,7 @@ export default function HomePage() {
                   ></textarea>
                 </label>
 
-                <button type="submit">Submit</button>
+                <button type="submit">Enviar</button>
               </form>
             </div>
           </section>

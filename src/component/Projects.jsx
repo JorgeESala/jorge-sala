@@ -7,8 +7,8 @@ import '../css/Projects.css';
 import sassSVG from '../assets/svg/sassLogo.svg';
 import webGenerator from '../assets/WebsiteGenerator.jpg';
 import playlistMaker from '../assets/PlaylistMaker.jpg';
-import retailSite from '../assets/RetailSite.jpg';
-import qrGenSite from '../assets/QRGeneratorSite.jpg';
+import gestor from '../assets/gestor.jpg';
+import vital from '../assets/vital.jpg';
 import authySite from '../assets/TicketAuthSite.jpg';
 import { faArrowLeft, faArrowRight, faCircle } from '@fortawesome/free-solid-svg-icons';
 
@@ -35,7 +35,7 @@ export default function Projects() {
 
   const projects = [
     {
-      name: "Retail Website",
+      name: "Gestor Empresarial",
       techstack: (
         <>
           {viteLogo}
@@ -47,28 +47,35 @@ export default function Projects() {
       dependencies: (
         <>
           {netlifyLogo}
-          <p>Jotai</p>
           <p>React Router</p>
         </>
       ),
       description: (
         <>
           <p>
-            This is a mock e-commerce website using front-end features combined
-            with <em>global state management handled by Jotai</em> and{" "}
-            <em>pagination with React Router</em>. Features include a randomly
-            generated list of clothing items to select your desired purchase,
-            filtering clothing items on the clothing page by price or rating,
-            adding items from your shopping or favorites cart, and a checkout
-            page to view your total and mock form to complete purchases.
+            Este proyecto es una plataforma web moderna diseñada para pequeñas y medianas empresas que buscan digitalizar su operación. Incluye:
+
+Gestión de clientes: Alta y edición rápida por nombre, correo y sucursal.
+
+Inventario con tabla interactiva: Ordenable por nombre o precio.
+
+Gráficas dinámicas: Para visualizar ventas mensuales por sucursal o producto.
+
+Página de contacto: Horarios por sucursal, teléfono y redes sociales.
+
+Diseño responsive y profesional en tonos azul oscuro y gris claro.
+
+Ideal para empresas que buscan eficiencia, control y presentación profesional desde cualquier dispositivo.
+
+
           </p>
         </>
       ),
-      demoUrl: "https://voguevalue.netlify.app",
-      image: retailSite,
+      demoUrl: "https://gestor-empresarial.netlify.app/",
+      image: gestor,
     },
     {
-      name: "QR Code Generator",
+      name: "Vital Arquitectura",
       techstack: (
         <>
           {viteLogo}
@@ -79,126 +86,19 @@ export default function Projects() {
       dependencies: (
         <>
           {netlifyLogo}
-          <p>react-qr-code</p>
+          <p>React Router</p>
+          <p>Gatsby</p>
         </>
       ),
       description: (
         <>
           <p>
-            This website makes use of the library react-qr-code to generate,
-            customize, and download your own QR Codes for websites, business
-            cards, social media, you name it! This project highlights some
-            interesting features possible with the library such as{" "}
-            <em>SVG to PNG conversion for file downloads</em> and{" "}
-            <em>state management to handle the styling of SVG elements</em>.
+            Sitio desarrollado para una empresa de arquitectura con el objetivo de presentar sus proyectos anteriores a clientes potenciales. Incluye una galería de imágenes y un visor de renders interactivo para mostrar diseños arquitectónicos en detalle. La página facilita una experiencia visual profesional y atractiva, mejorando la comunicación del portafolio de la firma.
           </p>
         </>
       ),
-      demoUrl: "https://qrbox.netlify.app/",
-      image: qrGenSite,
-    },
-    {
-      name: "Spotify Playlist Maker",
-      techstack: (
-        <>
-          {reactLogo}
-          {jsLogo}
-        </>
-      ),
-      dependencies: (
-        <>
-          {netlifyLogo}
-          <p>React-Context</p>
-          <p>Spotify API</p>
-        </>
-      ),
-      description: (
-        <>
-          <p>
-            This web application makes use of the SpotifyAPI to search your
-            favorite songs and create custom playlists to upload directly to
-            Spotify. The major features for this website include searching the
-            Spotify database to find your favorite songs and creating/editing
-            custom playlist to publish to your Spotify account. This project
-            served as my way to dive into understanding core concepts around{" "}
-            <em>React Context</em>,{" "}
-            <em>handling token requests and API data</em>,{" "}
-            <em>
-              hiding important API keys for production with dotenv and through
-              Netlify
-            </em>
-            , <em>repository history management on GitHub with GitBash</em>, as
-            well as the overall workflow for SPA's in React without using major
-            libraries.{" "}
-            <strong>
-              <em>
-                You do not need to authorize your account to create the
-                playlist, only to upload!
-              </em>
-            </strong>
-          </p>
-        </>
-      ),
-      demoUrl: "https://soundstack.netlify.app",
-      image: playlistMaker,
-    },
-    {
-      name: "Ticket Authentication Site",
-      techstack: (
-        <>
-          {viteLogo}
-          {reactLogo}
-          {jsLogo}
-          {sassLogo}
-        </>
-      ),
-      dependencies: (
-        <>
-          {netlifyLogo}
-          <p>React Context</p>
-        </>
-      ),
-      description: (
-        <>
-          <p>
-            This website explores mock <em>form validation techniques</em> with
-            features such as being able to generate a randomized custom ticket
-            in similar format to a gift or CC. The form may only be submitted if
-            the proper mock data is supplied to the appropriate fields.
-          </p>
-        </>
-      ),
-      demoUrl: "https://authentix.netlify.app/",
-      image: authySite,
-    },
-    {
-      name: "Random Website Generator",
-      techstack: (
-        <>
-          {htmlLogo}
-          {cssLogo}
-          {jsLogo}
-        </>
-      ),
-      dependencies: <>{netlifyLogo}</>,
-      description: (
-        <>
-          <p>
-            This website is powered by HTML, CSS, JavaScript and{" "}
-            <em>deployed with Netlify</em>. This tool immerses users in a
-            recreation of the Windows XP operating system, complete with a
-            pseudo Microsoft Paint allowing users to create digital artworks and
-            save them locally, a pseudo Internet Explorer that serves as a
-            random website generator allowing users to visit over 100 websites
-            from all corners of the internet, and a live messaging system to
-            chat with other visitors who have visited, this project transports
-            users back in time in a trip down memory lane to relive the charm of
-            the past through a modern lens.
-          </p>
-        </>
-      ),
-      demoUrl: "https://thedesktop.netlify.app",
-      image: webGenerator,
+      demoUrl: "https://vital-arquitectura.netlify.app/",
+      image: vital,
     },
   ];
 
@@ -225,7 +125,7 @@ export default function Projects() {
                 <div className='projectDesc'>
                   {project.description}
                 </div>
-                <a target='_blank' href={project.demoUrl}>Live Demo</a>
+                <a target='_blank' href={project.demoUrl}>Ver Demo</a>
               </div>
             </section>
           );
