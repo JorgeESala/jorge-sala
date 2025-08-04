@@ -12,10 +12,8 @@ function App() {
   }
 
   useEffect(() => {
-    // Activar dark mode por defecto
     document.body.classList.add('darkMode');
 
-    // Mostrar la página principal después de un tiempo
     const timer = setTimeout(() => {
       showIntro(false);
     }, 1500);
