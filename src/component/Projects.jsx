@@ -55,7 +55,7 @@ export default function Projects() {
           <p>
             Este proyecto es una plataforma web moderna diseñada para pequeñas y medianas empresas que buscan digitalizar su operación. Incluye:
 
-Gestión de clientes: Alta y edición rápida por nombre, correo y sucursal.
+Gestión de clientes: Alta y edición rápida con nombre, correo y sucursal.
 
 Inventario con tabla interactiva: Ordenable por nombre o precio.
 
@@ -63,7 +63,7 @@ Gráficas dinámicas: Para visualizar ventas mensuales por sucursal o producto.
 
 Página de contacto: Horarios por sucursal, teléfono y redes sociales.
 
-Diseño responsive y profesional en tonos azul oscuro y gris claro.
+Diseño responsive y profesional.
 
 Ideal para empresas que buscan eficiencia, control y presentación profesional desde cualquier dispositivo.
 
