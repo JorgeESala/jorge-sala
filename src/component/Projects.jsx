@@ -103,7 +103,7 @@ Ideal para empresas que buscan eficiencia, control y presentación profesional d
   ];
 
   return (
-    <div className="projectWheelContainer" onTouchMove={updateIndex}>
+    <div className="projectWheelContainer">
       <div
         className="projectWheel"
         style={{ transform: `translate(-${activeIndex * 100}%)` }}
